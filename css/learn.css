@@ -1,0 +1,688 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: rgba(181, 151, 151, 1);
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+}
+
+.page {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  flex-grow: 1;
+  color: #504949;
+}
+
+.main-header {
+  min-height: 262px;
+  background-color: #FFFFFF;
+}
+
+.main-nav {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 97px;
+}
+
+.site-navigation {
+  list-style: none;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.site-navigation-item {
+  margin-right: 38px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.site-navigation-item a {
+  text-decoration: none;
+  color: rgba(80, 73, 73, 1);
+}
+
+.site-navigation-item:hover {
+  font-weight: 700;
+}
+
+.site-navigation-item:last-child {
+  margin-right: 0;
+}
+
+.hero {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 130px;
+  padding: 0 100px 150px 150px;
+  background: url(../img/autor-desktop-3.jpg) 85% 45%/auto auto no-repeat;
+  background-color: #FFFFFF;
+}
+
+.hero>p {
+  font-weight: 700;
+  font-size: 18px;
+  padding-left: 107px;
+}
+
+.hero>h1,
+.tarifs>h2 {
+  font-weight: 600;
+  font-size: 80px;
+  margin-bottom: 5px;
+}
+
+.container {
+  max-width: 555px;
+}
+
+.desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+
+.laste {
+  margin-bottom: 7px;
+}
+
+.achiev {
+  display: inline-block;
+  margin-right: 40px;
+  margin-bottom: 38px;
+}
+
+.numbers {
+  font-weight: 400;
+  font-size: 50px;
+}
+
+.achiev p {
+  margin-bottom: 0;
+}
+
+.container>h2,
+.after>h2 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 17px;
+}
+
+.hero-list,
+.after-list {
+  list-style: none;
+}
+
+.hero-list li,
+.after-list li {
+  max-width: 430px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+  line-height: 150%;
+  font-size: 18px;
+  position: relative;
+}
+
+.list-item::before {
+  content: "  ";
+  font-weight: 400;
+  font-size: 50px;
+  position: absolute;
+  left: -40px;
+  top: 10px;
+}
+
+.item-one::before {
+  content: "1";
+}
+
+.item-two::before {
+  content: "2";
+}
+
+.item-three::before {
+  content: "3";
+}
+
+.item-four::before {
+  content: "4";
+}
+
+.program {
+  max-width: 1160px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 160px;
+  color: #FFFFFF;
+}
+
+.program h2 {
+  font-weight: 600;
+  font-size: 80px;
+  margin-bottom: 27px;
+  position: relative;
+}
+
+.program ul {
+  list-style: none;
+}
+
+.program li button {
+  max-width: 1160px;
+  width: 100%;
+  min-height: 64px;
+  font-size: 18px;
+  font-family: inherit;
+  color: #FFFFFF;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  cursor: pointer;
+  position: relative;
+}
+
+.program h2::after {
+  content: "  ";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: -19px;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.program h2::after {
+  bottom: -28px;
+}
+
+.program li button::after {
+  position: absolute;
+  content: " ";
+  width: 12px;
+  height: 36px;
+  top: 45%;
+  right: 10px;
+  background: url(../svg/+white.svg) no-repeat 0 0;
+}
+
+.tarifs {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 140px 150px 140px;
+  background-color: #FFFFFF;
+}
+
+.tarifs>h2 {
+  padding-top: 117px;
+  margin-bottom: 27px;
+}
+
+.tarifs>p {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 118px;
+}
+
+.tarifs>p>a,
+.after>p>a {
+  color: inherit;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.tarifs>p>a:hover,
+.after>p>a:hover {
+  text-decoration: underline;
+}
+
+.traifs-choise {
+  display: flex;
+}
+
+.tarifs-list {
+  max-width: 560px;
+  width: 100%;
+  margin-right: 40px;
+  margin-bottom: 37px;
+  padding-top: 39px;
+  padding-left: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #FFFFFF;
+  background-color: rgba(181, 151, 151, 1);
+}
+
+.tarifs-list:last-child {
+  margin-right: 0;
+}
+
+.tarifs-list p {
+  font-size: 20px;
+  margin-bottom: 22px;
+}
+
+.tarifs-list ul {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.tarifs-list ul li {
+  font-size: 18px;
+  line-height: 150%;
+  margin-left: 28px;
+  position: relative;
+}
+
+.tarifs-list ul li::before {
+  content: "  ";
+  position: absolute;
+  width: 20px;
+  left: -28px;
+  top: 50%;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.tarifs-list p.cost {
+  font-size: 18px;
+}
+
+.tarifs-list button {
+  max-width: 245px;
+  width: 100%;
+  min-height: 55px;
+  align-self: flex-end;
+  font-family: inherit;
+  font-size: 18px;
+  color: #504949;
+  cursor: pointer;
+  background-color: #FBF5F5;
+  border: 2px solid #8D6B5D;
+}
+
+.tarifs-list button:hover {
+  background-color: #ECE2DF;
+  transition: 1s;
+}
+
+.container-after,
+.services {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.after {
+  max-width: 560px;
+  width: 100%;
+  margin-left: auto;
+}
+
+.after>h2 {
+  margin-bottom: 22px;
+}
+
+.after-list {
+  margin-bottom: 32px;
+}
+
+.services {
+  padding: 163px 0 163px 0;
+}
+
+.product {
+  max-width: 560px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.product:last-child {
+  margin-bottom: 0;
+}
+
+.services-item {
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 40px 0 40px 94px;
+  color: #3C2A2A;
+  background-color: #FBF6F6;
+  position: relative;
+}
+
+.services-item:hover,
+.hero-button:hover {
+  background-color: #ECE2DF;
+  transition: 1s;
+}
+
+.services-item::after {
+  position: absolute;
+  content: "  ";
+  width: 30px;
+  height: 8px;
+  top: 48%;
+  right: 50px;
+  background: url(../svg/Arrow.svg) no-repeat 0 0;
+}
+
+.main-footer {
+  min-height: 265px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  padding-top: 103px;
+  background-color: #3C2A2A;
+}
+
+.footer-wrapper {
+  max-width: 1440px;
+  min-height: 135px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-footer div p,
+.main-footer div a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 45px;
+  color: #FBF6F6;
+  text-decoration: none;
+}
+
+.main-footer div a:hover {
+  text-decoration: underline;
+}
+
+.contacts,
+.home,
+.conf {
+  max-width: 300px;
+}
+
+.contacts {
+  text-align: left;
+}
+
+.social {
+  list-style: none;
+}
+
+.social-item {
+  width: 19px;
+  height: 19px;
+  display: inline-block;
+  position: relative;
+}
+
+.social-item:nth-child(1n+1) {
+  padding-right: 18px;
+}
+
+.link-instagram {
+  background: url(../svg/instagram.svg) no-repeat 0 0;
+}
+
+.link-telegram {
+  background: url(../svg/telegram.svg) no-repeat 0 0;
+}
+
+.link-watsup {
+  background: url(../svg/watsup.svg) no-repeat 0 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.home {
+  text-align: center;
+}
+
+.conf {
+  text-align: right;
+}
+
+@media (max-width: 1140px) {
+  .hero {
+    padding-left: 70px;
+    padding-bottom: 400px;
+    background: url(../img/autor-mobile-3.jpg) 95% 95%/auto auto no-repeat;
+    background-color: #FFFFFF;
+  }
+
+  .tarifs {
+    padding: 0 70px 100px 70px;
+  }
+
+  .services {
+    flex-direction: column;
+    padding: 80px 0 80px 0px;
+  }
+
+  .services-item {
+    padding-left: 37px;
+  }
+
+  .services-item::after {
+    right: 30px;
+  }
+}
+
+
+@media (min-width: 500px) {
+  .main-button {
+    display: none;
+  }
+}
+
+/*версия для телефона*/
+
+@media (max-width: 500px) {
+
+  .main-header {
+    min-height: 130px;
+  }
+
+  .site-navigation {
+    display: none;
+  }
+
+  .main-nav {
+    padding-top: 45px;
+    padding-right: 37px;
+  }
+
+  .main-button {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .main-button::after {
+    content: " ";
+    position: absolute;
+    background: url(../svg/burger.svg) 100% 100%/cover no-repeat;
+    width: 50px;
+    height: 21px;
+    top: 15px;
+    right: 0;
+  }
+
+  .hero {
+    max-width: 500px;
+    padding-bottom: 50px;
+    margin-bottom: 60px;
+    background: url(../img/autor-mobile-3.jpg) 100% 55%/auto auto no-repeat;
+    background-color: #FFFFFF;
+  }
+
+  .hero>p {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+  }
+
+  .hero>h1,
+  .tarifs>h2 {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .achiev {
+    margin-bottom: 4px;
+  }
+
+  .numbers {
+    font-size: 40px;
+  }
+
+  .achiev-last {
+    margin-bottom: 512px;
+  }
+
+  .container>h2,
+  .after>h2 {
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+
+  .hero-list li,
+  .after-list li {
+    line-height: 130%;
+  }
+
+  .list-item::before {
+    font-size: 40px;
+  }
+
+  .program h2 {
+    max-width: 300px;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 27px;
+  }
+
+  .program {
+    max-width: 300px;
+    margin-bottom: 80px;
+  }
+
+  .tarifs {
+    margin-bottom: 300px;
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+
+  .traifs-choise {
+    flex-wrap: wrap;
+  }
+
+  .tarifs>h2 {
+    padding-top: 65px;
+    font-size: 30px;
+  }
+
+  .tarifs-list p {
+    margin-bottom: 10px;
+  }
+
+  .tarifs-list {
+    margin-left: 15px;
+    margin-right: 0;
+  }
+
+  .tarifs-list p.cost {
+    margin-bottom: 27px;
+  }
+
+  .tarifs-list button {
+    margin-left: 35px;
+  }
+
+  .tarifs p.about {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 61px;
+  }
+
+  .after {
+    max-width: 310px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mobile-hidden {
+    display: none;
+  }
+
+  .services {
+    padding: 100px 0 100px 0;
+  }
+
+  .main-footer {
+    padding-top: 76px;
+    padding-left: 70px;
+    padding-bottom: 89px;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+  }
+
+  .home {
+    text-align: left;
+    order: 1;
+  }
+
+  .conf {
+    text-align: left;
+  }
+}
