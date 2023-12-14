@@ -223,17 +223,18 @@ body {
 }
 
 .social {
+  display: flex;
   list-style: none;
 }
 
-.social-item {
+.social__item {
   width: 19px;
   height: 19px;
   display: inline-block;
   position: relative;
 }
 
-.social-item:nth-child(1n+1) {
+.social__item:nth-child(1n+1) {
   padding-right: 18px;
 }
 
