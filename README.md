@@ -1,5 +1,16 @@
-<h1>Сайт астролога</h1>
+![Static Badge](https://img.shields.io/badge/HTML-5-red) ![Static Badge](https://img.shields.io/badge/CSS-3-blue)
 
-В данном репозитории представлен код для многостраничного адаптивного сайта астролога, использованы только HTML и CSS.
+# О проекте
 
-Отрисованная страница: https://linacor.github.io/Astrolog/
+Один из первых моих проектов, был выполнен без использования фреимворков. 
+Это адаптивный многостроничный сайт астролога. 
+
+Открыть страницу: https://linacor.github.io/Astrolog/
+
+# Демонстрация 
+## Desktop version
+![using a color picker](gif/desktop-version.gif)
+
+## Mobile version
+![using a color picker](gif/mobile-version.gif)
+
